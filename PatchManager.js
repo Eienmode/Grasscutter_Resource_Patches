@@ -48,9 +48,10 @@ const createPatch = (resourceTarget) => {
   // Prepare dirs
   prepareDirs();
 
+  let data = {};
   // Read json
   if (fs.existsSync(PATCH_MAPPINGS)) {
-    const data = JSON.parse(fs.readFileSync(PATCH_MAPPINGS, 'utf-8'));
+    data = JSON.parse(fs.readFileSync(PATCH_MAPPINGS, 'utf-8'));
 
     // Check if patch exists.
     if (data[resourceTarget]) {
@@ -97,7 +98,7 @@ const applyPatch = () => {
 
   // Apply all patches
   console.log('Applying Patches...');
-  for (const key of data) {
+  for (const key in data) {
     fs.copyFileSync(path.join(__dirname, data[key].Patch), path.join(GRASSCUTTER_RESOURCE_ROOT, key));
     console.log(`Patch ${data[key].Patch} is applied to ${key}`);
   }

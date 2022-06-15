@@ -1,0 +1,6 @@
+{
+  "server\\\\packet\\\\send\\\\PacketPlayerWorldSceneInfoListNotify.java": {
+    "Patch": "Patches_Source/c89e88bdf369c987d5d03b28b4f7b9030e0e806ed4b31556cb9fe6ad29159d4e.java",
+    "Original": "Original_Patches_Source/c89e88bdf369c987d5d03b28b4f7b9030e0e806ed4b31556cb9fe6ad29159d4e.java"
+  }
+}

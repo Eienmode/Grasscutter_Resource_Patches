@@ -1,3 +1,6 @@
 [submodule "Grasscutter_Resources"]
 	path = Grasscutter_Resources
 	url = https://github.com/Koko-boya/Grasscutter_Resources
+[submodule "Grasscutter_Source"]
+	path = Grasscutter_Source
+	url = https://github.com/Grasscutters/Grasscutter.git

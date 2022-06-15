@@ -2,10 +2,10 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
-const GRASSCUTTER_RESOURCE_ROOT = path.join(__dirname, './Grasscutter_Resources/');
-const PATCH_HUB_ROOT = path.join(__dirname, './Patches');
-const ORIGINAL_PATCH_HUB_ROOT = path.join(__dirname, './Original_Patches');
-const PATCH_MAPPINGS = path.join(__dirname, './PatchMappings.json');
+const GRASSCUTTER_RESOURCE_ROOT = path.join(__dirname, './Grasscutter_Source/src/main/java/emu/grasscutter');
+const PATCH_HUB_ROOT = path.join(__dirname, './Patches_Source');
+const ORIGINAL_PATCH_HUB_ROOT = path.join(__dirname, './Original_Patches_Source');
+const PATCH_MAPPINGS = path.join(__dirname, './SourcePatchMappings.json');
 
 const prepareDirs = () => {
   if (!fs.existsSync(ORIGINAL_PATCH_HUB_ROOT)) {
@@ -84,13 +84,13 @@ const createPatch = (resourceTarget) => {
   fs.copyFileSync(pathTarget, patchPath);
 
   data[resourceTarget] = {
-    Patch: `Patches/${hash}${fileExtension}`,
-    Original: `Original_Patches/${hash}${fileExtension}`
+    Patch: `Patches_Source/${hash}${fileExtension}`,
+    Original: `Original_Patches_Source/${hash}${fileExtension}`
   };
 
   fs.writeFileSync(PATCH_MAPPINGS, JSON.stringify(data, undefined, 2));
 
-  console.log('Edit patch here:', `Patches/${hash}${fileExtension}`);
+  console.log('Edit patch here:', `Patches_Source/${hash}${fileExtension}`);
 }
 
 const applyPatch = () => {
@@ -140,7 +140,7 @@ const commandParser = (args) => {
   if (args[2] === 'help') {
     console.log('PatchManager 1.0.0');
     console.log('');
-    console.log('create <target resource>        Creates Patch for a certain resource in Grasscutter_Resources dir');
+    console.log('create <target resource>        Creates Patch for a certain resource in Grasscutter_Sources dir');
     console.log('apply                           Applies the patch');
     console.log('revert                          Reverts the patch');
     console.log('help                            This help');

@@ -30,7 +30,9 @@ const hasMatch = (text) => {
     /AsterMiddle/gi,
     /Bartender/gi,
     /ActivityGachaNPC/gi,
-    /Perpetual/gi
+    /ActivityBlessingNPC/gi,
+    /Perpetual/gi,
+    /SeaLampGiving/gi
   ];
 
   for (let i = 0, l = hotWords.length; i < l; i++) {

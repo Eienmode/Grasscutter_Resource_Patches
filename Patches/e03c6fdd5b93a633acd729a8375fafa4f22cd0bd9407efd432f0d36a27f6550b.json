@@ -3041,18 +3041,6 @@
       "PFMFPKFDNEK": "UI_DUNGEON_ENTRY_57",
       "NIPKCKIFCGK": 0
     },
-    "151": {
-      "$type": "SceneBuildingPoint",
-      "heightSpeed": 70010001,
-      "height": 7,
-      "pos": {
-        "_x": -510.3590087890625,
-        "_y": 210.66700744628906,
-        "_z": 311.3525085449219
-      },
-      "alias": "",
-      "BGMAIKOBLOI": "SeaLampGiving"
-    },
     "152": {
       "$type": "SceneTransPoint",
       "heightSpeed": 70110002,
@@ -4731,18 +4719,6 @@
         14
       ],
       "DNEPOOOEHED": 1275
-    },
-    "238": {
-      "$type": "SceneBuildingPoint",
-      "heightSpeed": 70010001,
-      "height": 7,
-      "pos": {
-        "_x": -482.5481872558594,
-        "_y": 210.02220153808594,
-        "_z": 359.3876953125
-      },
-      "alias": "",
-      "BGMAIKOBLOI": "ActivityBlessingNPC"
     },
     "239": {
       "$type": "DungeonExit",

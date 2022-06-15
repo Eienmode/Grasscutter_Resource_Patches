@@ -10,5 +10,9 @@
   "Resources\\\\BinOutput\\\\Scene\\\\WorldArea\\\\scene7_worldArea.json": {
     "Patch": "Patches/9a6d6e1bcbd50d488fc0ac7fc0283223218247b733d853369d9e5d779bb4b567.json",
     "Original": "Original_Patches/9a6d6e1bcbd50d488fc0ac7fc0283223218247b733d853369d9e5d779bb4b567.json"
+  },
+  "Resources\\\\BinOutput\\\\Scene\\\\Point\\\\scene3_point.json": {
+    "Patch": "Patches/e03c6fdd5b93a633acd729a8375fafa4f22cd0bd9407efd432f0d36a27f6550b.json",
+    "Original": "Original_Patches/e03c6fdd5b93a633acd729a8375fafa4f22cd0bd9407efd432f0d36a27f6550b.json"
   }
 }
